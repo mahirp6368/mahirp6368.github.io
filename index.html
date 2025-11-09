@@ -70,12 +70,23 @@
         border: 1px solid #eee;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
       }
+      .statement-img {
+        max-width: 280px;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        display: block;
+        margin: 0 auto;
+      }
       .affinity-img {
         max-width: 300px;
         height: auto;
         border-radius: 10px;
         border: 1px solid #eee;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        display: block;
+        margin: 0 auto;
       }
       .sketch-img {
         max-width: 250px;
@@ -83,6 +94,8 @@
         border-radius: 10px;
         border: 1px solid #eee;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        display: block;
+        margin: 0 auto;
       }
       a {
         color: #4b2e83;
@@ -125,7 +138,57 @@
 
       <div class="section projects">
         <h2>Highlighted Projects</h2>
-        <p>Project Management 1 — where I learned more about using GitHub and managing project files.</p>
+
+        <div class="row">
+          <div class="card">
+            <h3><a href="files/statement.pdf" target="_blank" rel="noopener">Problem Statement</a></h3>
+            <a href="files/statement.pdf" target="_blank" rel="noopener">
+              <img class="statement-img" src="images/problem.png" alt="Problem Statement preview" onerror="this.style.display='none'; document.getElementById('statement-fallback').style.display='block';" />
+            </a>
+            <p id="statement-fallback" style="display:none; margin-top:12px;">
+              <a href="files/statement.pdf" target="_blank" rel="noopener">View Problem Statement (PDF)</a>
+            </p>
+            <p style="font-size:14px; margin-top:12px; text-align:left;">
+              A majority of college students struggle to keep track of their assignments and corresponding deadlines because they are balancing academics with extracurriculars.
+            </p>
+            <p style="margin-top:12px;">
+              <a href="files/statement.pdf" target="_blank" rel="noopener">Open Problem Statement (PDF)</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3><a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Affinity Diagram</a></h3>
+            <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">
+              <img class="affinity-img" src="images/Affinity_IMG.png" alt="Affinity Diagram" onerror="this.style.display='none'; document.getElementById('affinity-fallback').style.display='block';" />
+            </a>
+            <p id="affinity-fallback" style="display:none; margin-top:12px;">
+              <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">View full Affinity Diagram (PDF)</a>
+            </p>
+            <p style="font-size:14px; margin-top:12px; text-align:left;">
+              This Affinity Diagram organizes ideas for the student productivity app, including product ideas, hurdles, social media management, coupons/promotions, basic features, and constants/unchangeable elements.
+            </p>
+            <p style="margin-top:12px;">
+              <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Open Affinity Diagram (PDF)</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3><a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Sketches</a></h3>
+            <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">
+              <img class="sketch-img" src="images/sketch1_dashboard_fixed2.jpg" alt="Sketch 1 – Dashboard overview" onerror="this.style.display='none'; document.getElementById('sketch-fallback').style.display='block';" />
+            </a>
+            <p id="sketch-fallback" style="display:none; margin-top:12px;">
+              <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Open Sketches PDF</a>
+            </p>
+            <p style="font-size:14px; margin-top:12px; text-align:left;">
+              Click the image to open the PDF with all three sketches. Each sketch aligns with the Affinity Diagram insights.
+            </p>
+            <p style="margin-top:12px;">
+              <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Download PDF of all 3 sketches</a>
+            </p>
+          </div>
+        </div>
+
       </div>
 
       <div class="section contact">
@@ -134,52 +197,13 @@
         <p>GitHub: <a href="https://github.com/mahirp6368" target="_blank" rel="noopener">github.com/mahirp6368</a></p>
       </div>
 
-      <div class="section">
-        <h2>Problem Statement</h2>
-        <p>A majority of college students struggle to keep track of their assignments and corresponding deadlines because they are balancing academics with extracurriculars.</p>
-        <p class="center"><a href="files/statement.pdf" target="_blank" rel="noopener">View Full Problem Statement (PDF)</a></p>
-      </div>
-
-      <div class="section">
-        <h2>Affinity Diagram</h2>
-        <div class="center">
-          <img class="affinity-img" src="images/Affinity_IMG.png" alt="Affinity Diagram" onerror="this.style.display='none'; document.getElementById('affinity-fallback').style.display='block';" />
-          <p id="affinity-fallback" style="display:none; margin-top:12px;">
-            <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">View full Affinity Diagram (PDF)</a>
-          </p>
-        </div>
-        <p style="font-size:14px; margin-top:12px;">
-          This Affinity Diagram organizes ideas for the student productivity app, including product ideas, hurdles, social media management, coupons/promotions, basic features, and constants/unchangeable elements.
-        </p>
-        <p class="center" style="margin-top:8px;">
-          <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Open Affinity Diagram (PDF)</a>
-        </p>
-      </div>
-
-      <div class="section">
-        <h2>Sketches</h2>
-        <div class="center">
-          <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">
-            <img class="sketch-img" src="images/sketch1_dashboard_fixed2.jpg" alt="Sketch 1 – Dashboard overview" />
-          </a>
-        </div>
-        <p style="font-size:14px; margin-top:12px;">Click the image to open the PDF with all three sketches. Each sketch aligns with the Affinity Diagram insights.</p>
-        <ul>
-          <li><strong>Sketch 1 – Dashboard:</strong> Quick assignment visibility with color-coded urgency.</li>
-          <li><strong>Sketch 2 – Calendar:</strong> Weekly layout balancing academics and extracurriculars.</li>
-          <li><strong>Sketch 3 – Reminders:</strong> Smart notifications to prevent missed deadlines.</li>
-        </ul>
-        <p class="center" style="margin-top:12px;">
-          <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Download PDF of all 3 sketches</a>
-        </p>
-      </div>
-
       <footer>
         <p>Designed by <strong>Mahi Patel</strong> | University of South Carolina</p>
       </footer>
     </div>
   </body>
 </html>
+
 
 
 

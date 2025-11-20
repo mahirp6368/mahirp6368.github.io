@@ -35,9 +35,22 @@
       .section h2 {
         margin-top: 0;
       }
-      .about p, .skills ul, .projects p, .contact p {
-        margin: 0 0 12px 0;
+      .about-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .about-content img {
+        max-width: 180px;
+        border-radius: 50%;
+        border: 3px solid #eee;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+      .about-content p {
+        flex: 1;
         line-height: 1.6;
+        margin: 0;
       }
       .skills ul {
         padding-left: 20px;
@@ -124,7 +137,10 @@
 
       <div class="section about">
         <h2>About Me</h2>
-        <p>Hi! My name is Mahi Patel. I'm studying Computer Information in Business and I'm beginning my journey into web development. I enjoy learning new tools and building practical projects that solve problems.</p>
+        <div class="about-content">
+          <img src="images/pfp.jpg" alt="Photo of Mahi Patel">
+          <p>Hi! My name is Mahi Patel. I'm studying Computer Information in Business and I'm beginning my journey into web development. I enjoy learning new tools and building practical projects that solve problems.</p>
+        </div>
       </div>
 
       <div class="section skills">
@@ -143,73 +159,58 @@
           <div class="card">
             <h3><a href="files/statement.pdf" target="_blank" rel="noopener">Problem Statement</a></h3>
             <a href="files/statement.pdf" target="_blank" rel="noopener">
-              <img class="statement-img" src="images/problem.png" alt="Problem Statement preview" onerror="this.style.display='none'; document.getElementById('statement-fallback').style.display='block';" />
+              <img class="statement-img" src="images/problem.png" alt="Problem Statement preview" />
             </a>
-            <p id="statement-fallback" style="display:none; margin-top:12px;">
-              <a href="files/statement.pdf" target="_blank" rel="noopener">View Problem Statement (PDF)</a>
-            </p>
             <p style="font-size:14px; margin-top:12px; text-align:left;">
               A majority of college students struggle to keep track of their assignments and corresponding deadlines because they are balancing academics with extracurriculars.
-            </p>
-            <p style="margin-top:12px;">
-              <a href="files/statement.pdf" target="_blank" rel="noopener">Open Problem Statement (PDF)</a>
             </p>
           </div>
 
           <div class="card">
             <h3><a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Affinity Diagram</a></h3>
             <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">
-              <img class="affinity-img" src="images/Affinity_IMG.png" alt="Affinity Diagram" onerror="this.style.display='none'; document.getElementById('affinity-fallback').style.display='block';" />
+              <img class="affinity-img" src="images/Affinity_IMG.png" alt="Affinity Diagram" />
             </a>
-            <p id="affinity-fallback" style="display:none; margin-top:12px;">
-              <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">View full Affinity Diagram (PDF)</a>
-            </p>
             <p style="font-size:14px; margin-top:12px; text-align:left;">
               This Affinity Diagram organizes ideas for the student productivity app, including product ideas, hurdles, social media management, coupons/promotions, basic features, and constants/unchangeable elements.
-            </p>
-            <p style="margin-top:12px;">
-              <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Open Affinity Diagram (PDF)</a>
             </p>
           </div>
 
           <div class="card">
             <h3><a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Sketches</a></h3>
             <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">
-              <img class="sketch-img" src="images/sketch1_dashboard_fixed2.png" alt="Sketch 1 – Dashboard overview" onerror="this.style.display='none'; document.getElementById('sketch-fallback').style.display='block';" />
+              <img class="sketch-img" src="images/sketch1_dashboard_fixed2.png" alt="Sketch 1 – Dashboard overview" />
             </a>
-            <p id="sketch-fallback" style="display:none; margin-top:12px;">
-              <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Open Sketches PDF</a>
-            </p>
             <p style="font-size:14px; margin-top:12px; text-align:left;">
               Click the image to open the PDF with all three sketches. Each sketch aligns with the Affinity Diagram insights.
             </p>
-            <p style="margin-top:12px;">
-              <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Download PDF of all 3 sketches</a>
-            </p>
           </div>
         </div>
 
+        <!-- NEW GITHUB REPO SECTION -->
+        <h2 style="margin-top:40px;">GitHub Repositories</h2>
         <div class="row">
           <div class="card">
-            <h3><a href="https://github.com/mahirp6368/sample-java-code" target="_blank" rel="noopener">Sample Java Code Repository</a></h3>
+            <h3><a href="https://github.com/mahirp6368/sample-java-code" target="_blank" rel="noopener">Sample Java Code</a></h3>
             <a href="https://github.com/mahirp6368/sample-java-code" target="_blank" rel="noopener">
-              <img src="images/java_repo_thumbnail.png" alt="Java Repository Preview" onerror="this.style.display='none';">
+              <img src="images/java_repo_thumbnail.png" alt="Java Repo Preview" onerror="this.style.display='none';">
             </a>
             <p style="font-size:14px; margin-top:12px; text-align:left;">
-              Example Java project demonstrating basic syntax and version control on GitHub.
+              Example Java repository showing simple code and GitHub version control.
             </p>
           </div>
 
           <div class="card">
-            <h3><a href="https://github.com/mahirp6368/sample-html-css-code" target="_blank" rel="noopener">Sample HTML/CSS Repository</a></h3>
+            <h3><a href="https://github.com/mahirp6368/sample-html-css-code" target="_blank" rel="noopener">Sample HTML/CSS Code</a></h3>
             <a href="https://github.com/mahirp6368/sample-html-css-code" target="_blank" rel="noopener">
-              <img src="images/htmlcss_repo_thumbnail.png" alt="HTML CSS Repository Preview" onerror="this.style.display='none';">
+              <img src="images/htmlcss_repo_thumbnail.png" alt="HTML/CSS Repo Preview" onerror="this.style.display='none';">
             </a>
             <p style="font-size:14px; margin-top:12px; text-align:left;">
-              Basic webpage project with simple HTML and CSS structure hosted on GitHub.
+              A simple HTML and CSS example hosted on GitHub demonstrating basic webpage design.
             </p>
           </div>
         </div>
+        <!-- END NEW GITHUB REPO SECTION -->
       </div>
 
       <div class="section" id="resume-section">
@@ -218,15 +219,11 @@
         <div class="row" style="justify-content:flex-start;">
           <div class="card" style="width:340px; text-align:left;">
             <h3><a href="resume.html" target="_blank" rel="noopener">View Resume (HTML)</a></h3>
-            <p style="font-size:14px; margin-top:8px;">
-              Opens my resume directly in your browser.
-            </p>
+            <p style="font-size:14px; margin-top:8px;">Opens my resume directly in your browser.</p>
           </div>
           <div class="card" style="width:340px; text-align:left;">
             <h3><a href="files/resume.pdf" target="_blank" rel="noopener" download>Download Resume (PDF)</a></h3>
-            <p style="font-size:14px; margin-top:8px;">
-              Click to download a PDF copy of my resume.
-            </p>
+            <p style="font-size:14px; margin-top:8px;">Click to download a PDF copy of my resume.</p>
           </div>
         </div>
       </div>
@@ -243,6 +240,8 @@
     </div>
   </body>
 </html>
+
+
 
 
 

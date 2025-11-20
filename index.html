@@ -5,39 +5,129 @@
     <title>CSCE 190: Mahi Patel</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      body { font-family: Arial, Helvetica, sans-serif; background-color: #f5f6fa; margin:0; padding:20px; }
-      .container { width:90%; max-width:1100px; margin:0 auto; }
-      header.main { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px; }
-      header.main h1 { margin:0; color:#111; }
-      nav a { margin-left:12px; color:#4b2e83; text-decoration:none; font-weight:600; }
-      .section { background:#fff; border-radius:16px; padding:20px; margin:20px 0; box-shadow:0 6px 18px rgba(0,0,0,0.05); text-align:left; }
-      .row { display:flex; flex-wrap:wrap; gap:30px; margin-top:20px; }
-      .card { background:#fff; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.05); padding:24px; width:320px; text-align:center; }
-      .card h3 { margin-top:0; color:#4b2e83; }
-      a.button { display:inline-block; padding:8px 12px; background:#4b2e83; color:#fff; border-radius:8px; text-decoration:none; font-weight:600; }
-      footer { background:#4b2e83; color:#fff; padding:15px 0; text-align:center; margin-top:30px; border-radius:8px; }
-      @media (max-width:760px){ .row{justify-content:center} .card{width:100%; max-width:420px} nav{display:block; margin-top:8px} }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f6fa;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #111;
+        margin-top: 0;
+      }
+      h2 {
+        color: #4b2e83;
+      }
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .section {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        text-align: left;
+      }
+      .section h2 {
+        margin-top: 0;
+      }
+      .about p, .skills ul, .projects p, .contact p {
+        margin: 0 0 12px 0;
+        line-height: 1.6;
+      }
+      .skills ul {
+        padding-left: 20px;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .card {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        padding: 24px;
+        width: 320px;
+        text-align: center;
+      }
+      .card h3 {
+        margin-top: 0;
+        color: #4b2e83;
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+      }
+      .statement-img {
+        max-width: 280px;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        display: block;
+        margin: 0 auto;
+      }
+      .affinity-img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        display: block;
+        margin: 0 auto;
+      }
+      .sketch-img {
+        max-width: 250px;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        display: block;
+        margin: 0 auto;
+      }
+      a {
+        color: #4b2e83;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        background-color: #4b2e83;
+        color: white;
+        padding: 15px 0;
+        font-size: 14px;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <header class="main">
-        <h1>Mahi Patel</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="resume.html">Resume</a>
-          <a href="div_res.html">Resume (Div)</a>
-          <a href="table_res.html">Resume (Table)</a>
-          <a href="https://github.com/mahirp6368" target="_blank" rel="noopener">GitHub</a>
-        </nav>
-      </header>
+      <h1>Mahi Patel</h1>
 
-      <div class="section">
+      <div class="section about">
         <h2>About Me</h2>
         <p>Hi! My name is Mahi Patel. I'm studying Computer Information in Business and I'm beginning my journey into web development. I enjoy learning new tools and building practical projects that solve problems.</p>
       </div>
 
-      <div class="section">
+      <div class="section skills">
         <h2>Skills</h2>
         <ul>
           <li>HTML — building structured web pages</li>
@@ -46,54 +136,90 @@
         </ul>
       </div>
 
-      <div class="section">
+      <div class="section projects">
         <h2>Highlighted Projects</h2>
+
         <div class="row">
           <div class="card">
-            <h3><a href="files/statement.pdf" target="_blank">Problem Statement</a></h3>
-            <p style="text-align:left; font-size:14px;">A majority of college students struggle to keep track of their assignments and corresponding deadlines because they balance academics with extracurriculars.</p>
-            <p><a class="button" href="files/statement.pdf" target="_blank">Open PDF</a></p>
+            <h3><a href="files/statement.pdf" target="_blank" rel="noopener">Problem Statement</a></h3>
+            <a href="files/statement.pdf" target="_blank" rel="noopener">
+              <img class="statement-img" src="images/problem.png" alt="Problem Statement preview" onerror="this.style.display='none'; document.getElementById('statement-fallback').style.display='block';" />
+            </a>
+            <p id="statement-fallback" style="display:none; margin-top:12px;">
+              <a href="files/statement.pdf" target="_blank" rel="noopener">View Problem Statement (PDF)</a>
+            </p>
+            <p style="font-size:14px; margin-top:12px; text-align:left;">
+              A majority of college students struggle to keep track of their assignments and corresponding deadlines because they are balancing academics with extracurriculars.
+            </p>
+            <p style="margin-top:12px;">
+              <a href="files/statement.pdf" target="_blank" rel="noopener">Open Problem Statement (PDF)</a>
+            </p>
           </div>
 
           <div class="card">
-            <h3><a href="files/Affinity_DOC.pdf" target="_blank">Affinity Diagram</a></h3>
-            <p style="text-align:left; font-size:14px;">Organized ideas for student productivity app; product ideas, hurdles, coupons, features.</p>
-            <p><a class="button" href="files/Affinity_DOC.pdf" target="_blank">Open PDF</a></p>
+            <h3><a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Affinity Diagram</a></h3>
+            <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">
+              <img class="affinity-img" src="images/Affinity_IMG.png" alt="Affinity Diagram" onerror="this.style.display='none'; document.getElementById('affinity-fallback').style.display='block';" />
+            </a>
+            <p id="affinity-fallback" style="display:none; margin-top:12px;">
+              <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">View full Affinity Diagram (PDF)</a>
+            </p>
+            <p style="font-size:14px; margin-top:12px; text-align:left;">
+              This Affinity Diagram organizes ideas for the student productivity app, including product ideas, hurdles, social media management, coupons/promotions, basic features, and constants/unchangeable elements.
+            </p>
+            <p style="margin-top:12px;">
+              <a href="files/Affinity_DOC.pdf" target="_blank" rel="noopener">Open Affinity Diagram (PDF)</a>
+            </p>
           </div>
 
           <div class="card">
-            <h3><a href="images/sketches_fixed_portrait.pdf" target="_blank">Sketches</a></h3>
-            <p style="text-align:left; font-size:14px;">Three sketches aligned with affinity diagram insights.</p>
-            <p><a class="button" href="images/sketches_fixed_portrait.pdf" target="_blank">Open PDF</a></p>
+            <h3><a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Sketches</a></h3>
+            <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">
+              <img class="sketch-img" src="images/sketch1_dashboard_fixed2.png" alt="Sketch 1 – Dashboard overview" onerror="this.style.display='none'; document.getElementById('sketch-fallback').style.display='block';" />
+            </a>
+            <p id="sketch-fallback" style="display:none; margin-top:12px;">
+              <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Open Sketches PDF</a>
+            </p>
+            <p style="font-size:14px; margin-top:12px; text-align:left;">
+              Click the image to open the PDF with all three sketches. Each sketch aligns with the Affinity Diagram insights.
+            </p>
+            <p style="margin-top:12px;">
+              <a href="images/sketches_fixed_portrait.pdf" target="_blank" rel="noopener">Download PDF of all 3 sketches</a>
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="code-samples">
         <h2>Code Samples</h2>
-        <p>Click a repository to view project source on GitHub.</p>
-        <div class="row">
-          <div class="card" style="text-align:left;">
-            <h3><a href="https://github.com/mahirp6368/sample-java-code" target="_blank">Sample Java Code</a></h3>
-            <p style="font-size:14px;">HelloWorld Java demo.</p>
+        <p>Click a repository to view my sample projects on GitHub.</p>
+        <div class="row" style="justify-content:flex-start;">
+          <div class="card" style="width:340px; text-align:left;">
+            <h3><a href="https://github.com/mahirp6368/sample-java-code" target="_blank" rel="noopener">Sample Java Code</a></h3>
+            <p style="font-size:14px; margin-top:8px;">HelloWorld Java demo repository showcasing basic Java syntax.</p>
           </div>
-          <div class="card" style="text-align:left;">
-            <h3><a href="https://github.com/mahirp6368/sample-html-css-code" target="_blank">Sample HTML/CSS Code</a></h3>
-            <p style="font-size:14px;">Basic webpage demo.</p>
+          <div class="card" style="width:340px; text-align:left;">
+            <h3><a href="https://github.com/mahirp6368/sample-html-css-code" target="_blank" rel="noopener">Sample HTML/CSS Code</a></h3>
+            <p style="font-size:14px; margin-top:8px;">Simple HTML and CSS demo repository with a basic web page layout.</p>
           </div>
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="resume-section">
         <h2>Resume</h2>
+        <p>Click below to view or download my full resume:</p>
         <div class="row" style="justify-content:flex-start;">
-          <div class="card" style="text-align:left;">
-            <h3><a href="resume.html" target="_blank">Resume (HTML)</a></h3>
-            <p style="font-size:14px;">Open HTML resume.</p>
+          <div class="card" style="width:340px; text-align:left;">
+            <h3><a href="resume.html" target="_blank" rel="noopener">View Resume (HTML)</a></h3>
+            <p style="font-size:14px; margin-top:8px;">
+              Opens my resume directly in your browser.
+            </p>
           </div>
-          <div class="card" style="text-align:left;">
-            <h3><a href="files/resume.pdf" target="_blank" download>Download Resume (PDF)</a></h3>
-            <p style="font-size:14px;">Download the PDF copy.</p>
+          <div class="card" style="width:340px; text-align:left;">
+            <h3><a href="files/resume.pdf" target="_blank" rel="noopener" download>Download Resume (PDF)</a></h3>
+            <p style="font-size:14px; margin-top:8px;">
+              Click to download a PDF copy of my resume.
+            </p>
           </div>
         </div>
       </div>
@@ -101,7 +227,7 @@
       <div class="section contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:mahirp@email.sc.edu">mahirp@email.sc.edu</a></p>
-        <p>GitHub: <a href="https://github.com/mahirp6368" target="_blank">github.com/mahirp6368</a></p>
+        <p>GitHub: <a href="https://github.com/mahirp6368" target="_blank" rel="noopener">github.com/mahirp6368</a></p>
       </div>
 
       <footer>
@@ -110,6 +236,8 @@
     </div>
   </body>
 </html>
+
+
 
 
 
